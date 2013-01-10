@@ -25,6 +25,9 @@ public class JumpPlusListener implements Listener {
     public void onPlayerMove(PlayerMoveEvent event) {
         Player p = event.getPlayer();
         JumpPlusPlayer jumpPlayer = plugin.playerConfig.get(p.getDisplayName());
+        if (jumpPlayer == null) {
+            jumpPlayer = new JumpPlusPlayer(plugin, p);
+        }
         if (p.hasPermission("jumpplus.use") && jumpPlayer.isEnabled()) {
             if (((CraftPlayer) p).getHandle().onGround) {
                 jumpPlayer.setJumps(0);
