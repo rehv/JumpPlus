@@ -1,0 +1,43 @@
+name: JumpPlus
+version: ${project.version}
+authors: [Rehv]
+softdepend: [PermissionsEX]
+
+main: com.github.rehv.jumpplus.JumpPlus
+
+commands:
+  jptoggle:
+    usage: /<command>
+    description: Toggle the use of the JumpPlus plugin
+  jpreload:
+    usage: /<command>
+    description: Reload the JumpPlus plugin
+    permission: jumpplus.reload
+
+permissions:
+  jumpplus.*:
+    description: Grants user all abilities in the plugin.
+    children:
+      jumpplus.use: true
+      jumpplus.bypass.*: true
+  jumpplus.bypass.*:
+    description: Grants user all abilities without penalty or limit
+    children:
+      jumpplus.bypass.food: true
+      jumpplus.bypass.limit: true
+      jumpplus.bypass.gravity: true
+  jumpplus.use:
+    description: Allow user to use double jump
+    default: true
+  jumpplus.reload:
+    description: Allow user to reload the plugin
+    default: op
+  jumpplus.bypass.food:
+    description: Allow user to jump without cost
+    default: op
+  jumpplus.bypass.limit:
+    description: Allow user to jump indefinitely
+    default: op
+  jumpplus.bypass.gravity:
+    description: Allow user to double jump without fall damage
+    default: op

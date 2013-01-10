@@ -1,0 +1,9 @@
+JumpPlus for Bukkit
+
+JumpPlus is a plugin purely designed for allowing double (or multiple) jumping. 
+
+Everything is configurable: both vertical and horizontal speeds, maximum number of jumps, maximum number of free jumps and jump cost(in hunger). In you can easily make a moon jump or a double jump just enough to climb two blocks. 
+
+The default values on the config are for a horizontal speed that basically matches the sprinting jump(3 blocks straight), and vertical velocity to double jump two blocks (on top of the other).
+
+For configuration and stable releases download, go to: http://dev.bukkit.org/server-mods/jumpplus/

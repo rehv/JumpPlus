@@ -1,0 +1,27 @@
+#Set the speed of the "double" jump. Accepts integer or decimal format
+speed:
+  horizontal: 0.45
+  vertical: 0.70
+
+#Set the maximum number of jumps (doesn't count the normal jump) (free or "paid"). Accepts integer format
+maxJumps: 3
+
+#Set the maximum number of free jumps (doesn't count the normal jump) must be less or equal to maxjumps. Accepts integer format
+maxFreeJumps: 1
+
+#Set the cost of "paid" jumps. Costs are in hunger value. Accepts integer format. 1 = 0.5 hunger
+jumpCost: 1
+
+#Set the fall distance modifier. Positive means less fall damage, negative means more fall damage. Accepts integer
+#Note: Only affects falls caused by double jumping. 1 Damage = -0.5 hearth lost
+fallModifier: 1
+
+#Set whether to show visual particles on double jump or not. Accepts boolean
+particleEffect: true
+
+#Set the delay between permission based config updates (in minutes). 0 to disable. Accepts integer
+reloadTimer: 5
+
+#Set the default state of the plugin (can be changed ingame with /jptoggle). 
+#True to start it enabled, false to start it disabled. Accepts boolean
+defaultState: true
