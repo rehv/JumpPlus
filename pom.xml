@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.rehv</groupId>
   <artifactId>jumpplus</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
   <name>JumpPlus</name>
   <description>Allows the use of double jumping</description>
   <properties>
@@ -18,7 +18,7 @@
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>craftbukkit</artifactId>
-      <version>1.4.6-R0.2-SNAPSHOT</version>
+      <version>1.4.6-R0.3</version>
     </dependency>
     <dependency>
       <groupId>ru.tehkode</groupId>
